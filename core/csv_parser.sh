@@ -12,7 +12,7 @@ read file_csv_sorgente
 echo "Inserisci il path assoluto del file CSV DESTINAZIONE (con colonne store_fname ecc):"
 read file_csv_destinazione
 
-#
+#TODO: per evitare di inserirli a mano scommenta le seguenti righe e cambia i path
 #sorgente="/home/matto/Scaricati/File inviato compresso/Nuova cartella/25-01-2024"
 #destinazione="/home/matto/Scrivania/script_nicola/novakb_develop"
 #file_csv_sorgente="/home/matto/Scrivania/script_nicola/core/source/sorgente.csv"
@@ -70,7 +70,7 @@ resu_f=$?
 result=$(test -f not_founds.txt)
 resu_nf=$?
 
-echo $resu_f
+delete_files="y"
 
 if [[ $resu_f == 0 ]] &&  [[ $resu_nf == 0 ]];
       then
